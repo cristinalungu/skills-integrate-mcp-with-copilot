@@ -33,6 +33,15 @@ main {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  #activities-container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
 }
 
 @media (min-width: 768px) {
@@ -48,6 +57,13 @@ section {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
 }
 
 section h3 {
@@ -59,6 +75,36 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
+    margin-bottom: 30px;
+  .register-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    align-items: center;
+  }
+
+  .register-section input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  .register-section .register-btn {
+    background-color: #1a237e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .register-section .register-btn:hover {
+    background-color: #3949ab;
+  }
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
